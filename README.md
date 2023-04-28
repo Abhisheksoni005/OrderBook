@@ -2,4 +2,4 @@ Binance order book as documented on this: https://github.com/binance/binance-spo
 
 You can modify the SYMBOL and LIMIT to change the traded symbol and display limit of the order book respectively.
 
-Run OrderBook.main() to start generate the order book. It will be printed on the terminal.
+Run OrderBook.main() to start generating the order book. It will be printed on the terminal.
