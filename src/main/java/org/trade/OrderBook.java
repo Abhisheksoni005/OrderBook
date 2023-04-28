@@ -47,12 +47,6 @@ public class OrderBook {
         snapshotUrl = "https://api.binance.com/api/v3/depth?symbol=" + SYMBOL + "&limit=" + LIMIT;
     }
 
-    public static void main(String args[]) throws OrderBookException {
-        OrderBook orderBook = new OrderBook();
-        orderBook.open();
-        orderBook.start();
-    }
-
     private void open() throws OrderBookException {
 
         try {
@@ -224,6 +218,13 @@ public class OrderBook {
     private String formatNumber(Double number) {
         DecimalFormat format = new DecimalFormat("0.00000000");
         return format.format(number);
+    }
+
+    //Run this to start printing the Order Book
+    public static void main(String args[]) throws OrderBookException {
+        OrderBook orderBook = new OrderBook();
+        orderBook.open();
+        orderBook.start();
     }
 }
 
